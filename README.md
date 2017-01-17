@@ -22,4 +22,6 @@ If a key file is provided, we hash it too. We now have two hashes and we concato
 
 We split the has into of 11-bits numbers (2^11 = 2048 our word list size). We output the corresponding word to this number.
 
-We default to three words for a minimum entropy of 33-bits. The words are five to fourteen characters. Without the wordlist, minimum entropy is 48 bits and maximum is 146 bits. This puts it into dictionary hashcat possible, but web server hacking difficult.
+We default to three words. We can choose to start at an offset. Each input gives an output of 21 words (with three bits left over), so there can be seven sets. Rotate through them due to "must change passwords every X days" rules.
+
+If the word list is know, we have entropy of 33-bits. The words are five to fourteen characters. Without the wordlist, minimum entropy is 48 bits and maximum is 146 bits. This puts it into dictionary hashcat possible, but web server hacking difficult.
