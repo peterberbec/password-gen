@@ -1,6 +1,6 @@
 PassWord Generator
 
-Creates secure passwords based off of https://xkcd.com/936/. It defaults to only 33 bits of entropy :)
+Creates secure (I hope) passwords based off of https://xkcd.com/936/. It defaults to only 33 bits of entropy :)
 
 usage:
 
