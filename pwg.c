@@ -35,7 +35,7 @@ void hash_break(char hash_in[64], unsigned int hash_out[24])
 int readconfig(int *num_words, char *hash, int *password_num)
 {
         FILE *config;
-        char file_name[]=".pwg.conf", variable[1024], value[1024], input[1024];
+        char file_name[]="pwg.conf", variable[1024], value[1024], input[1024];
         int ret=0;
 
 	if(!(config=fopen(file_name, "r"))) // first check current dir
